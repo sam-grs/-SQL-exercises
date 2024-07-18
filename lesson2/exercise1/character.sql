@@ -23,7 +23,7 @@ SELECT * FROM tb_character;
 
 SELECT * FROM tb_character WHERE power > 2000.00; 
 SELECT * FROM tb_character WHERE power BETWEEN 1000 AND 2000; 
-SELECT * FROM tb_character WHERE your_name LIKE "c%";
+SELECT * FROM tb_character WHERE your_name LIKE "%c%";
 
 SELECT your_name, power, shield, gender, character_level, typeof, class_description FROM tb_character
 INNER JOIN tb_character_class ON tb_character.class_id = tb_character_class.id;
